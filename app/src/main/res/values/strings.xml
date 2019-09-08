@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Nazareth</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="artic">Articles</string>
+    <string name="events">Envents</string>
+    <string name="aboutus">About us</string>
+    <string name="contactus">Contact Us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discover">DISCOVER PLACES NEAR YOU</string>
+    <string name="search">Search</string>
+    <string name="resta">Restaurant</string>
+    <string name="accommodation">Accomodation</string>
+    <string name="attractions">Attractions</string>
+     <string name="entertainment">Entertainment</string>
+    <string name="transportation">Transportation \n Service</string>
+</resources>

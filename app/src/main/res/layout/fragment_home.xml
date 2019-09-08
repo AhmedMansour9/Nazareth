@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Home">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_10sdp"
+
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/_115sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/restaurant"
+                android:id="@+id/img_restaurant"
+                android:layout_marginTop="@dimen/_165sdp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resta"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:layout_alignBottom="@+id/img_restaurant"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_115sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/accomoation"
+                android:layout_below="@+id/img_restaurant"
+                android:id="@+id/img_accomodation"
+                android:layout_marginTop="@dimen/_7sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accommodation"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:layout_alignBottom="@+id/img_accomodation"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_115sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/attractions"
+                android:layout_below="@+id/img_accomodation"
+                android:id="@+id/img_attractions"
+                android:layout_marginTop="@dimen/_7sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attractions"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:layout_alignBottom="@+id/img_attractions"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_115sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/entertainmanetpng"
+                android:layout_below="@+id/img_attractions"
+                android:id="@+id/img_entertainmanet"
+                android:layout_marginTop="@dimen/_7sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/entertainment"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:layout_alignBottom="@+id/img_entertainmanet"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_115sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/transportation"
+                android:layout_below="@+id/img_entertainmanet"
+                android:id="@+id/img_transportation"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transportation"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:layout_alignBottom="@+id/img_transportation"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:id="@+id/rela_toolbar"
+        android:background="@drawable/raduis">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent">
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:layout_marginStart="@dimen/_65sdp"
+                       android:text="@string/home"
+                       android:textColor="#fff"
+                       android:textStyle="bold"
+                       android:textSize="@dimen/_15sdp"
+                       />
+               </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/discover"
+            android:textColor="#fff"
+            android:id="@+id/ser"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            />
+
+        <EditText
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ser"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="@string/search"
+            android:background="@drawable/search_border"
+            android:textColor="#CCCCCC"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColorHint="#CCCCCC"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
