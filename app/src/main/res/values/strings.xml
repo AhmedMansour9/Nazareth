@@ -12,14 +12,20 @@
     <string name="events">Envents</string>
     <string name="aboutus">About us</string>
     <string name="contactus">Contact Us</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="discover">DISCOVER PLACES NEAR YOU</string>
     <string name="search">Search</string>
     <string name="resta">Restaurant</string>
     <string name="accommodation">Accomodation</string>
     <string name="attractions">Attractions</string>
-     <string name="entertainment">Entertainment</string>
+    <string name="entertainment">Entertainment</string>
     <string name="transportation">Transportation \n Service</string>
+    <string name="bestfood">Best food and drink in Nazareth</string>
+    <string name="address">Address</string>
+    <string name="openlocation"> Open Location On Google Map</string>
+    <string name="review">View Review</string>
+    <string name="similiarrestau">Similar Restaurant</string>
+    <string name="googlemap">Google Map</string>
+    <string name="result">Result</string>
+    <string name="aboutnas">About Netherah.com</string>
 </resources>

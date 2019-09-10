@@ -1,16 +1,10 @@
 package com.nazareth.Activites;
 
-import android.content.Intent;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
 
 import com.google.android.material.navigation.NavigationView;
 import com.nazareth.Fragments.AboutUs;
-import com.nazareth.Fragments.Articles;
+import com.nazareth.Fragments.Articatles;
 import com.nazareth.Fragments.ContactUs;
 import com.nazareth.Fragments.Events;
 import com.nazareth.Fragments.Home;
@@ -97,7 +91,7 @@ public class Navigation extends AppCompatActivity
             case R.id.arti:
                 mCurrentSelectedPosition = 1;
 
-                fr = new Articles();
+                fr = new Articatles();
 
 
                 break;

@@ -18,26 +18,23 @@ import com.nazareth.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ContactUs extends Fragment {
+public class Articatles extends Fragment {
 
 
-    public ContactUs() {
+    public Articatles() {
         // Required empty public constructor
     }
-    View view;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-
-
+    View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.fragment_contact_us, container, false);
+        view= inflater.inflate(R.layout.fragment_articatles, container, false);
         ButterKnife.bind(this,view);
         NavigationDrawer navigationDrawer=new NavigationDrawer(getActivity());
         navigationDrawer.Navigation(toolbar);
-
 
 
         return view;

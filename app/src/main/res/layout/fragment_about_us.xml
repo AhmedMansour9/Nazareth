@@ -5,10 +5,45 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.AboutUs">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="@dimen/_170sdp"
+        android:id="@+id/rela_toolbar"
+        android:background="@drawable/bc_aboutus">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_55sdp"
+                    android:text="@string/aboutus"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+     <ImageView
+         android:layout_width="@dimen/_60sdp"
+         android:layout_height="@dimen/_60sdp"
+         android:layout_below="@+id/toolbar"
+         android:layout_centerHorizontal="true"
+         android:src="@drawable/ic_aboutus"
+         android:layout_marginTop="@dimen/_20sdp"
+         />
+
+
+    </RelativeLayout>
 
 </FrameLayout>

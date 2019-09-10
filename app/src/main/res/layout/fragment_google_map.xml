@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.GoogleMap">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                 android:text="@string/googlemap"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp"
+                />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+</RelativeLayout>

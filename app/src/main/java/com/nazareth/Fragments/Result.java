@@ -14,10 +14,10 @@ import com.nazareth.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Articles extends Fragment {
+public class Result extends Fragment {
 
 
-    public Articles() {
+    public Result() {
         // Required empty public constructor
     }
 
@@ -26,7 +26,7 @@ public class Articles extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_articles, container, false);
+        return inflater.inflate(R.layout.fragment_result, container, false);
     }
 
 }

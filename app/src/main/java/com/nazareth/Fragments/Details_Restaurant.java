@@ -3,41 +3,30 @@ package com.nazareth.Fragments;
 
 import android.os.Bundle;
 
-import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nazareth.NavigationDrawer;
 import com.nazareth.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ContactUs extends Fragment {
+public class Details_Restaurant extends Fragment {
 
 
-    public ContactUs() {
+    public Details_Restaurant() {
         // Required empty public constructor
     }
+
     View view;
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.fragment_contact_us, container, false);
-        ButterKnife.bind(this,view);
-        NavigationDrawer navigationDrawer=new NavigationDrawer(getActivity());
-        navigationDrawer.Navigation(toolbar);
-
+        view= inflater.inflate(R.layout.fragment_details__restaurant, container, false);
 
 
         return view;

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Details_Restaurant">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/_150sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_Slider"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_Slider"
+        android:textColor="#E2503F"
+        android:text="ahmed mansour"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/Title"
+        />
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:rating=".25"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_below="@+id/Title"
+        android:gravity="left|center"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="#F5C401"
+        android:transformPivotX="0dp"
+        android:progressBackgroundTint="#000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating_bar"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="#727272"
+        android:text="aksjnklajsdkljasld;kjaksjdlasjflkhafkljhajkdfh"
+        android:id="@+id/T_Discrip"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/T_Discrip"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="#E2503F"
+        android:text="@string/address"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:id="@+id/address"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="#727272"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Ain SHams Cairo Egypt"
+        android:id="@+id/T_Address"
+        />
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/btn_googlemap"
+         android:layout_below="@+id/T_Address"
+         android:layout_marginTop="@dimen/_20sdp"
+         android:layout_marginStart="@dimen/_10sdp"
+         android:layout_marginEnd="@dimen/_10sdp"
+         android:text="@string/openlocation"
+         android:textAllCaps="false"
+         android:gravity="center_vertical"
+         android:drawablePadding="@dimen/_10sdp"
+         android:paddingStart="@dimen/_40sdp"
+         android:textColor="#727272"
+         android:drawableStart="@drawable/ic_google_map"
+         android:textSize="@dimen/_13sdp"
+         android:id="@+id/btn_openmap"
+         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_review"
+        android:layout_below="@+id/btn_openmap"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="@string/review"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="@dimen/_13sdp"
+        android:id="@+id/btn_review"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_review"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:textColor="#E2503F"
+        android:text="@string/similiarrestau"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:id="@+id/simliar"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_Restaurants"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_below="@+id/simliar"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"/>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Restaurants">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:src="@drawable/ic_back"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/resta"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:src="@drawable/ic_filter"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_Menus"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recycler_Menus"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/bestfood"
+        android:textColor="#E2503F"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13sdp"
+        android:id="@+id/best"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_Restaurants"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/best"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

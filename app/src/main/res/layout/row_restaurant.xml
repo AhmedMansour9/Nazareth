@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_160sdp"
+        android:id="@+id/CardView2"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_height="@dimen/_155sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_restaruant"
+            android:scaleType="fitXY"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CardView2"
+        android:textColor="#E2503F"
+        android:text="ahmed mansour"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/Title"
+        />
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:rating=".25"
+        android:layout_below="@+id/Title"
+        android:gravity="left|center"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:progressTint="#F5C401"
+        android:transformPivotX="0dp"
+        android:progressBackgroundTint="#000"
+
+
+        />
+
+
+
+</RelativeLayout>
